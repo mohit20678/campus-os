@@ -1,0 +1,15 @@
+export const NAV = [
+  { path: '/', label: 'Overview', group: 'Observe' },
+  { path: '/map', label: 'Campus Map', group: 'Observe', phase: 'Phase 2' },
+  { path: '/pulse', label: 'Campus Pulse', group: 'Observe', phase: 'Phase 2' },
+  { path: '/crowd', label: 'Crowd Intelligence', group: 'Observe', phase: 'Phase 2' },
+  { path: '/resources', label: 'Resource Monitor', group: 'Observe', phase: 'Phase 3' },
+  { path: '/anomalies', label: 'Anomaly Radar', group: 'Understand', phase: 'Phase 3' },
+  { path: '/memory', label: 'Campus Memory', group: 'Understand', phase: 'Phase 3' },
+  { path: '/problems', label: 'Problem Radar', group: 'Understand', phase: 'Phase 3' },
+  { path: '/insights', label: 'AI Insights', group: 'Understand', phase: 'Phase 4' },
+  { path: '/simulator', label: 'What-If Simulator', group: 'Decide', phase: 'Phase 4' },
+  { path: '/reports', label: 'Reports', group: 'Decide', phase: 'Phase 4' },
+  { path: '/settings', label: 'Settings', group: 'Decide', phase: 'Phase 5' },
+  { path: '/profile', label: 'Profile', group: 'Decide', phase: 'Phase 5' },
+]
