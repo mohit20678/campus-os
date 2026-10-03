@@ -1,4 +1,5 @@
 import { BUILDINGS } from './buildings'
+import { getSettings } from './settings'
 
 const g = (h, mu, s) => Math.exp(-((h - mu) ** 2) / (2 * s * s))
 const clamp = (v, lo = 0, hi = 100) => Math.min(hi, Math.max(lo, v))
@@ -59,6 +60,7 @@ const statusOf = (pct) => (pct < 25 ? 'low' : pct < 60 ? 'normal' : pct < 85 ? '
 
 export function generateSnapshot(d = new Date()) {
   const h = hourOf(d)
+  const threshold = getSettings().threshold
 
   const buildings = BUILDINGS.map((b) => {
     const occupancy = occupancyAt(b, d)
@@ -66,7 +68,7 @@ export function generateSnapshot(d = new Date()) {
     const pct = Math.round((occupancy / b.capacity) * 100)
     const deviation =
       baseline > b.capacity * 0.1 ? Math.round(((occupancy - baseline) / baseline) * 100) : 0
-    return { ...b, occupancy, baseline, pct, deviation, status: statusOf(pct), anomalous: deviation >= 30 }
+    return { ...b, occupancy, baseline, pct, deviation, status: statusOf(pct), anomalous: deviation >= threshold }
   })
 
   const anomalies = buildings
