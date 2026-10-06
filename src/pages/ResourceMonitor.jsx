@@ -99,6 +99,6 @@ export default function ResourceMonitor() {
           In the prototype these rooms are simulated. With occupancy and power sensors connected, this list would update on its own.
         </p>
       </Card>
-    </div>
+    </div> 
   )
 }

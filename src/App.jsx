@@ -1,7 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
+import RequireAuth from './components/RequireAuth'
 import Overview from './pages/Overview'
 import Placeholder from './pages/Placeholder'
+import Login from './pages/Login'
 import { NAV } from './nav'
 
 // Every file in src/pages is picked up automatically.
@@ -29,7 +31,14 @@ const FILES = {
 export default function App() {
   return (
     <Routes>
-      <Route element={<Layout />}>
+      <Route path="/login" element={<Login />} />
+      <Route
+        element={
+          <RequireAuth>
+            <Layout />
+          </RequireAuth>
+        }
+      >
         <Route index element={<Overview />} />
         {NAV.filter((n) => n.path !== '/').map((n) => {
           const Page = byName[FILES[n.path]]
