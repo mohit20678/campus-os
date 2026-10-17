@@ -12,4 +12,5 @@ export const NAV = [
   { path: '/reports', label: 'Reports', group: 'Decide', phase: 'Phase 4' },
   { path: '/settings', label: 'Settings', group: 'Decide', phase: 'Phase 5' },
   { path: '/profile', label: 'Profile', group: 'Decide', phase: 'Phase 5' },
+  { path: '/admin', label: 'Admin', group: 'Decide', adminOnly: true },
 ]

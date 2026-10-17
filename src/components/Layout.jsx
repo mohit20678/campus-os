@@ -9,7 +9,7 @@ const linkClass = ({ isActive }) =>
   (isActive ? 'bg-white/10 text-ink' : 'text-mute hover:text-ink')
 
 export default function Layout() {
-  const { user, profile, signOut } = useAuth()
+  const { user, profile, signOut, isAdmin } = useAuth()
   const navigate = useNavigate()
 
   const name = (profile && profile.full_name) || (user && user.email) || ''
@@ -38,7 +38,7 @@ export default function Layout() {
               <div className="hidden px-3 pb-1 text-[11px] uppercase tracking-widest text-mute md:block">
                 {group}
               </div>
-              {NAV.filter((n) => n.group === group).map((n) => (
+              {NAV.filter((n) => n.group === group && (!n.adminOnly || isAdmin)).map((n) => (
                 <NavLink key={n.path} to={n.path} end={n.path === '/'} className={linkClass}>
                   {n.label}
                 </NavLink>

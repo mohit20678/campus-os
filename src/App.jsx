@@ -26,6 +26,7 @@ const FILES = {
   '/reports': 'Reports',
   '/settings': 'Settings',
   '/profile': 'Profile',
+  '/admin': 'Admin',
 }
 
 export default function App() {
