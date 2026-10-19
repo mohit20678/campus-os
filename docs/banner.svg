@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="CAMPUS OS animated banner"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a0c10"/><stop offset="1" stop-color="#171c33"/></linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b9cff"/><stop offset="1" stop-color="#5cc8ff"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#232834" stroke-width="1" opacity=".55"/></pattern>
+<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="38"/></filter>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="clip"><rect width="1200" height="400" rx="26"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="1200" height="400" fill="url(#bg)"/>
+<rect width="1200" height="400" fill="url(#grid)"/>
+<circle cx="980" cy="90" r="150" fill="#8b9cff" opacity=".22" filter="url(#blur)"><animate attributeName="cx" values="940;1020;940" dur="9s" repeatCount="indefinite"/></circle>
+<circle cx="160" cy="360" r="130" fill="#5cc8ff" opacity=".14" filter="url(#blur)"><animate attributeName="cx" values="120;240;120" dur="11s" repeatCount="indefinite"/></circle>
+
+<text x="70" y="102" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8b93a5" letter-spacing="4">HITAM  ·  CSE (AI + ML)</text>
+<text x="66" y="188" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="#eef1f6">CAMPUS<tspan fill="#8b9cff"> OS</tspan></text>
+<text x="70" y="232" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="27" fill="#c4cce0">The intelligence layer for your campus.</text>
+<text x="70" y="272" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#8b9cff" opacity=".35">Observe<animate attributeName="opacity" values=".35;1;.35" keyTimes="0;.5;1" dur="3s" begin="0s" repeatCount="indefinite"/></text><text x="182" y="272" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#3a4258">›</text><text x="205" y="272" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#8b9cff" opacity=".35">Understand<animate attributeName="opacity" values=".35;1;.35" keyTimes="0;.5;1" dur="3s" begin="0.5s" repeatCount="indefinite"/></text><text x="362" y="272" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#3a4258">›</text><text x="385" y="272" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#8b9cff" opacity=".35">Remember<animate attributeName="opacity" values=".35;1;.35" keyTimes="0;.5;1" dur="3s" begin="1s" repeatCount="indefinite"/></text><text x="527" y="272" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#3a4258">›</text><text x="550" y="272" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#8b9cff" opacity=".35">Simulate<animate attributeName="opacity" values=".35;1;.35" keyTimes="0;.5;1" dur="3s" begin="1.5s" repeatCount="indefinite"/></text><text x="677" y="272" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#3a4258">›</text><text x="700" y="272" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#8b9cff" opacity=".35">Decide<animate attributeName="opacity" values=".35;1;.35" keyTimes="0;.5;1" dur="3s" begin="2s" repeatCount="indefinite"/></text>
+
+<circle cx="960" cy="175" r="98" fill="none" stroke="#8b9cff" stroke-width="2" opacity="0">
+<animate attributeName="r" values="98;158" dur="3.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".55;0" dur="3.6s" repeatCount="indefinite"/></circle>
+<circle cx="960" cy="175" r="98" fill="none" stroke="#5cc8ff" stroke-width="2" opacity="0">
+<animate attributeName="r" values="98;158" dur="3.6s" begin="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/></circle>
+<circle cx="960" cy="175" r="98" fill="#11141b" fill-opacity=".85" stroke="#232834" stroke-width="16"/>
+<circle cx="960" cy="175" r="98" fill="none" stroke="url(#ac)" stroke-width="16" stroke-linecap="round" stroke-dasharray="615.8" stroke-dashoffset="615.8" transform="rotate(-90 960 175)" filter="url(#glow)">
+<animate attributeName="stroke-dashoffset" values="615.8;110.8;110.8" keyTimes="0;.35;1" dur="8s" repeatCount="indefinite"/></circle>
+<text x="960" y="123" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="4" fill="#8b93a5">CAMPUS PULSE</text>
+<text x="960" y="217" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="88" font-weight="800" fill="#eef1f6">82</text>
+<text x="960" y="241" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#8b93a5">/ 100</text>
+
+<path d="M0 345 H90 l12 -16 l12 16 H140 l10 -54 l18 100 l14 -52 l10 6 H260 H350 l12 -16 l12 16 H400 l10 -54 l18 100 l14 -52 l10 6 H520 H610 l12 -16 l12 16 H660 l10 -54 l18 100 l14 -52 l10 6 H780 H870 l12 -16 l12 16 H920 l10 -54 l18 100 l14 -52 l10 6 H1040 H1130 l12 -16 l12 16 H1180 l10 -54 l18 100 l14 -52 l10 6 H1300" fill="none" stroke="#8b9cff" stroke-width="2" opacity=".18"/>
+<path d="M0 345 H90 l12 -16 l12 16 H140 l10 -54 l18 100 l14 -52 l10 6 H260 H350 l12 -16 l12 16 H400 l10 -54 l18 100 l14 -52 l10 6 H520 H610 l12 -16 l12 16 H660 l10 -54 l18 100 l14 -52 l10 6 H780 H870 l12 -16 l12 16 H920 l10 -54 l18 100 l14 -52 l10 6 H1040 H1130 l12 -16 l12 16 H1180 l10 -54 l18 100 l14 -52 l10 6 H1300" pathLength="1000" fill="none" stroke="url(#ac)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="90 910" filter="url(#glow)">
+<animate attributeName="stroke-dashoffset" values="90;-1000" dur="5.5s" repeatCount="indefinite"/></path>
+
+<rect x="70" y="338" width="232" height="30" rx="15" fill="none" stroke="#ffb84d" stroke-opacity=".55"/>
+<circle cx="90" cy="353" r="4" fill="#ffb84d"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+<text x="104" y="358" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#ffb84d" letter-spacing="1.5">DEMO DATA · SIMULATED</text>
+</g>
+</svg>
